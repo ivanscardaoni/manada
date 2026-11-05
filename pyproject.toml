@@ -1,0 +1,11 @@
+[project]
+name = "manada"
+version = "0.1.0"
+description = "AI agent framework using Ollama"
+requires-python = ">=3.9"
+dependencies = [
+    "openai>=1.0.0",
+]
+
+[tool.uv]
+python-version = "3.9"
