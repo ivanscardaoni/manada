@@ -6,7 +6,7 @@ client = OpenAI(
     base_url="http://localhost:11434/v1"
 )
 
-def call_ollama(prompt: str, model: str = "mistral", temperature: float = 0.7) -> str:
+def call_ollama(prompt: str, model: str = "qwen3:8b", temperature: float = 0.7) -> str:
     """Call Ollama model via OpenAI-compatible API."""
     response = client.chat.completions.create(
         model=model,
